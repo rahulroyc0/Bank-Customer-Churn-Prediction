@@ -51,10 +51,10 @@ export default function ChurnDashboard() {
     e.preventDefault();
     setLoading(true);
     setError(null);
-    setResult(null);
+    setResult(null);   
 
     try {
-      const response = await fetch('http://localhost:8000/predict', {
+      const response = await fetch('https://bank-customer-churn-prediction-ow0a.onrender.com/predict', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
